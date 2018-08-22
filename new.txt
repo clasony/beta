@@ -1,0 +1,4 @@
+Observing objects...
+Tree objects..
+Blob objects..
+commit objects..
