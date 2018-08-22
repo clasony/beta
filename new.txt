@@ -2,3 +2,5 @@ Observing objects...
 Tree objects..
 Blob objects..
 commit objects..
+
+Now let me check committing once again. 
