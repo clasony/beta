@@ -4,3 +4,6 @@ Blob objects..
 commit objects..
 
 Now let me check committing once again. 
+
+fsck (file system check ) - It shows all the corrupted objects.
+firstly, it checks the connectivity and then checks the corrupted objects in the database. 
