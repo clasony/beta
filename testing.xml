@@ -1,0 +1,31 @@
+<project name="testing" basedir="." default="">
+<property name="src" value="D:\sony\ant\test"/>
+
+<filelist id="path-name" dir="${src}">
+<file name="one.txt"/>
+<file name="two.txt"/>
+</filelist>
+
+<target name="one" description="defining this target">
+<echo message="this is target one"/>
+</target>
+
+<target name="two" description="defining this target as two" depends="one">
+<echo>this is target two</echo>
+</target>
+
+<target name="three" description="describing this target as three" depends="two">
+<echo message="this is target three"/>
+<antcall target="one"/>
+</target>
+
+<target name="path" description="changing the target value from the paths">
+
+<copy file="${src}/three.txt" todir="D:\sony\ant\work\pre1">
+<filelist refid="path-name"/>
+<filterset>
+<filter token="Hello" value="Hi"/>
+</filterset>
+</copy>
+</target>
+</project>
